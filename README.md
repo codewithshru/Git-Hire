@@ -32,8 +32,6 @@ npm run dev
 
 **Migrations:** `cd backend && ./.venv/Scripts/python.exe -m alembic upgrade head`
 
-See the `Makefile` for all commands (`make help`).
-
 ## Local infrastructure
 
 PostgreSQL 16 (db `githire`) and Memurai (Redis-compatible) run as native
