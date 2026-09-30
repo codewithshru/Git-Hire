@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --border: 214 32% 91%;
+    --primary: 243 75% 59%; /* indigo-600 (default) */
+    --primary-foreground: 0 0% 100%;
+    --radius: 0.75rem;
+  }
+
+  /* Candidate experience — indigo/purple */
+  .theme-candidate {
+    --primary: 243 75% 59%; /* indigo-600 */
+    --primary-foreground: 0 0% 100%;
+  }
+
+  /* Recruiter experience — green */
+  .theme-recruiter {
+    --primary: 142 72% 29%; /* green-700 */
+    --primary-foreground: 0 0% 100%;
+  }
+
+  /* Creator experience — YouTube-style neutral/red accent */
+  .theme-creator {
+    --primary: 0 72% 51%; /* youtube red */
+    --primary-foreground: 0 0% 100%;
+  }
+}

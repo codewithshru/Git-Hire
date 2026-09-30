@@ -1,0 +1,1 @@
+"""GitHire backend test suite."""
