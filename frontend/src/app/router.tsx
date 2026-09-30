@@ -6,7 +6,7 @@ import { CreatorLayout } from "./layouts/CreatorLayout";
 
 /** Experiences are code-split: users only download the role they use. */
 const CandidateHome = lazy(() => import("@/modules/candidate/pages/Home"));
-const RecruiterHome = lazy(() => import("@/modules/recruiter/pages/Home"));
+const RecruiterHome = lazy(() => import("@/modules/recruiter/pages"));
 const CreatorDashboard = lazy(() => import("@/modules/creator/pages/Dashboard"));
 
 export const router = createBrowserRouter([

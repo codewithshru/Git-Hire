@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    # Deployment steps are filled in when hosting is provisioned
+    # (Vercel frontend + ECS backend). Workflow scaffold only.
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Frontend deploys via Vercel
+        run: echo "Connect the Vercel Git integration to enable automatic deploys."
+
+  deploy-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Backend deploy (ECS)
+        run: echo "Add ECR push + ECS deploy steps when AWS infrastructure is provisioned."
